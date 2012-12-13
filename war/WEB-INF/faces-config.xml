@@ -17,9 +17,9 @@
 	
 	<navigation-rule>
 		<navigation-case>
-			<redirect /> <!-- forca a atualizacao da url -->
-			<from-outcome>listaMercadorias</from-outcome>
+		    <from-outcome>listaMercadorias</from-outcome>
 			<to-view-id>/listaMercadorias.xhtml</to-view-id>
+			<redirect />
 		</navigation-case>
 	</navigation-rule>
 	
