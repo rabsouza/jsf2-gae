@@ -29,7 +29,9 @@ public class SessionSerializationPhaseListener implements PhaseListener {
     
     public void afterPhase(final PhaseEvent event) {
     	if (event.getPhaseId().equals(PhaseId.RENDER_RESPONSE) 
-    			|| event.getPhaseId().equals(PhaseId.INVOKE_APPLICATION))
+    			|| event.getPhaseId().equals(PhaseId.INVOKE_APPLICATION)
+    			|| (event.getPhaseId().equals(PhaseId.APPLY_REQUEST_VALUES) 
+    					&& event.getFacesContext().getResponseComplete()))
     		serialSession();
     }
     

@@ -161,18 +161,14 @@ public class MercadoriaMB implements Serializable {
 	 */
 	public String remover() {
 		try {
-			if (mercadoria != null) {
-				dao.remove(mercadoria);
-				mercadorias.remove(mercadoria.getId());
-				
-				log.debug("Removeu mercadoria "+mercadoria.getId());
-			}
+			dao.remove(mercadoria);
+			mercadorias.remove(mercadoria.getId());
 		} catch(Exception ex) {
 			log.error("Erro ao remover mercadoria.", ex);
 			addMessage(getMessageFromI18N("msg.erro.remover.mercadoria"), ex.getMessage());
 			return "";
 		}
-		
+		log.debug("Removeu mercadoria "+mercadoria.getId());
 		return "listaMercadorias";
 	}
 	
