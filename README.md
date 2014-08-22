@@ -5,8 +5,6 @@ Aplicativo web demonstração, desenvolvido com o framework JavaServer Faces 2 (
 
 O objetivo dessa aplicação é servir como conteúdo no estudo de desenvolvimento de soluções para web, utilizando uma tecnologia produtiva, e para implantação na nuvem.
 
-Você pode acessar a aplicação no Google App Engine através da url: http://yawdemo-jsf2gae.appspot.com/listaMercadorias.jsf
-
 Detalhes da implementação
 -------
 Tecnologias utilizadas na implementação:
